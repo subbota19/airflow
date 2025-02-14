@@ -397,7 +397,7 @@ class TestSnowflakeSqlApiOperator:
     ):
         """
         Tests that the execute method correctly loops and waits until all queries complete
-        when `deferrable=False`
+        when ``deferrable=False``
         """
         operator = SnowflakeSqlApiOperator(
             task_id=TASK_ID,
@@ -431,7 +431,7 @@ class TestSnowflakeSqlApiOperator:
     ):
         """
         Tests that the execute method raises AirflowException if any query fails during polling
-        when `deferrable=False`
+        when ``deferrable=False``
         """
         operator = SnowflakeSqlApiOperator(
             task_id=TASK_ID,
